@@ -6,63 +6,58 @@
     <title>Ecoblox - Artist Homepage</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #111;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d0d0d;
             color: white;
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            height: 100vh;
             margin: 0;
+            padding: 20px;
         }
         h1 {
-            font-size: 3rem;
+            font-size: 4rem;
             margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: transform 0.3s ease-in-out;
+        }
+        h1:hover {
+            transform: scale(1.1);
         }
         p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin-bottom: 20px;
+            opacity: 0.8;
         }
         a {
             color: #1DB954;
             text-decoration: none;
             font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #17a74a;
         }
         .button {
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #1DB954;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #1DB954, #17a74a);
             color: black;
             font-weight: bold;
-            border-radius: 25px;
+            border-radius: 30px;
             text-decoration: none;
-            transition: background 0.3s;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(29, 185, 84, 0.4);
         }
         .button:hover {
-            background-color: #17a74a;
-        }
-        .song-list {
-            list-style: none;
-            padding: 0;
-        }
-        .song-item {
-            margin: 10px 0;
-        }
-        .song-title {
-            font-size: 1.5rem;
-            margin: 5px 0;
-        }
-        .release-date {
-            font-size: 1rem;
-            color: #888;
-        }
-        .new-release {
-            border: 2px solid #1DB954;
-            padding: 10px;
-            border-radius: 10px;
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(29, 185, 84, 0.6);
         }
     </style>
 </head>
@@ -72,30 +67,6 @@
     <a href="mailto:fmaster1141@gmail.com">fmaster1141@gmail.com</a>
     <br>
     <a href="https://open.spotify.com/artist/5eRIEpiHri0reA9VrA8UeS" class="button" target="_blank">Listen on Spotify</a>
-
-    <h2>Discography</h2>
-    <ul class="song-list">
-        <li class="song-item new-release">
-            <p class="song-title">Shadows</p>
-            <p class="release-date">Released: December 23, 2024</p>
-            <a href="https://play.anghami.com/song/1189999393" class="button" target="_blank">Listen</a>
-        </li>
-        <li class="song-item">
-            <p class="song-title">Südwestfunkfunkhaushausmeister</p>
-            <p class="release-date">Released: September 29, 2024</p>
-            <a href="https://play.anghami.com/song/1179009971" class="button" target="_blank">Listen</a>
-        </li>
-        <li class="song-item">
-            <p class="song-title">White Lines</p>
-            <p class="release-date">Released: August 28, 2024</p>
-            <a href="https://www.amazon.com/White-Lines-Explicit-EcoBlox/dp/B0DF6QM7GV" class="button" target="_blank">Listen</a>
-        </li>
-        <li class="song-item">
-            <p class="song-title">Steel and Shadows</p>
-            <p class="release-date">Released: October 14, 2022</p>
-            <a href="https://www.amazon.com/Steel-Shadows-EcoBlox/dp/B0DLB2M8LP" class="button" target="_blank">Listen</a>
-        </li>
-    </ul>
 </body>
 </html>
 
